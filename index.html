@@ -346,31 +346,46 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
+        <img src="static/images/ta_dc.png" alt="First research result visualization" loading="lazy"/>
         <!-- TODO: Replace with description of this result -->
         <h2 class="subtitle has-text-centered">
-          First image description.
+          Interaction Protocol: (i) DC (direct control) and (ii) TA (tool-assisted). Inputs are resized to fit each VLM’s native
+resolution, and outputs are resized back to the original scale for evaluation.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
+        <img src="static/images/Starrail_UI_component.png" alt="Second research result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          Annotated HSR combat UI. Key affordances include: (1) the action order track governing future turns; (2) Ultimate
+indicators (glow = ready); (3) team skill points; (4) Basic Attack and (5) Skill buttons with availability reflecting (3); (6) damage
+and status text; (7) the auto-battle toggle. Top-center, the boss frame shows a white toughness bar above a red HP bar. In the
+example, the team has 0 skill points, disabling (5) while (4) remains usable; the glow at (2) indicates Seele's Ultimate can be cast,
+potentially off-turn.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
+        <img src="static/images/ask_act.jpg" alt="Third research result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
+          Ask-or-Act diagnostic pipeline. At episode start
+          (TA regime), the agent chooses Ask (query LightRAG once
+          for a short hint, persisted across the episode) or Act (proceed
+          without guidance). Both paths run the same battle loop with
+          the same action interface 𝑎<sub>𝑡</sub> = (𝑐, 𝑚, 𝑡); they differ only in
+          prompt context. A decision log records concise summaries
+          (actions sequence for previous battle and battle result) to
+          support learning-to-ask.
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
+      <img src="static/images/result_table.jpg" alt="Fourth research result visualization" loading="lazy"/>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+        Echo of War per-task results. We report SR% (↑), Steps (↓), and 𝑹<sub>EoW</sub> (↑); rewards use a unified 0-100 scale. VLMs are
+grouped by regime; baselines appear separately. Coloring: best VLM per boss in yellow, best Baseline per boss in blue; the
+winner's SR/Steps/Reward cells are all highlighted. Tie-break: higher SR → lower Steps → higher Reward. ∞ stands for infinite
+steps for failure case and would not take in count during comparison.
       </h2>
     </div>
   </div>
