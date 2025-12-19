@@ -280,7 +280,11 @@ body {
   margin: 0;
   border-radius: var(--border-radius);
   width: 100%;
+  max-width: 900px;
   height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .results-carousel .subtitle {
@@ -288,6 +292,63 @@ body {
   color: var(--text-secondary);
   margin-top: 1rem;
   font-weight: 500;
+}
+
+/* Image size control classes */
+.img-small {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-medium {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-large {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-full {
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* For wide tables and horizontal images - no max-width limit */
+.img-wide {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* For extra large images like detailed tables */
+.img-xlarge {
+  max-width: 1600px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Pagination and Misc Improvements */
